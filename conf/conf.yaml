@@ -1,0 +1,19 @@
+files:
+  raw:
+    wiki_prices: wiki_prices.csv
+    # Description: stock prices for 3000 US publicly-traded companies. Source: https://data.nasdaq.com/databases/WIKIP/data
+
+
+input:
+  kind: local
+
+output:
+  kind: local
+
+func_params:
+  start_dt: 2015-01-01
+  end_dt: 2017-12-31
+  adv_top: 500
+  adv_window: 30
+  target:
+    tau: 5
