@@ -13,7 +13,7 @@ output:
 func_params:
   start_dt: 2015-01-01
   end_dt: 2017-12-31
-  adv_top: 500
-  adv_window: 30
+  avol_top: 500
+  avol_window: 30
   target:
     tau: 5
