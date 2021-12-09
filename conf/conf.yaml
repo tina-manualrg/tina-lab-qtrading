@@ -2,6 +2,10 @@ files:
   raw:
     wiki_prices: wiki_prices.csv
     # Description: stock prices for 3000 US publicly-traded companies. Source: https://data.nasdaq.com/databases/WIKIP/data
+    wiki_meta: us_equities_meta_data.csv
+    # Description: metadata for each stock in https://data.nasdaq.com/databases/WIKIP/data
+    sp500: sp500.csv
+    # SP500 cotization. Source FRED
 
 
 input:
@@ -17,3 +21,6 @@ func_params:
   avol_window: 30
   target:
     tau: 5
+  split_dt:
+    valid: 2016-12-31
+    test: 2017-06-30
